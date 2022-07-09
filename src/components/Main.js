@@ -6,7 +6,7 @@ const Main = () => {
     <div className="main">
       <div className="slogan flex">
         <div className="left-part">
-          <h1>More than just shorter links</h1>
+          <h1 className='main-title' >More than just shorter links</h1>
           <p>
             Build your brand’s recognition and get detailed insights on how your
             links are performing.

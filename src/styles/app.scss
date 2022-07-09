@@ -7,6 +7,7 @@ $grayish-violet: hsl(257, 7%, 63%);
 $dark-blue: hsl(255, 11%, 22%);
 $dark-violet: hsl(260, 8%, 14%);
 $dark-purple: #3A3053;
+
 body {
     font-family: 'Poppins', sans-serif;
     color: gray;
@@ -14,6 +15,10 @@ body {
 }
 h1 {
     color: $dark-violet;
+}
+*{
+    padding: 0;
+    margin: 0;
 }
 .icon {
     color: $dark-violet;
@@ -26,24 +31,20 @@ ul li {
     margin-right: 30px;
     cursor: pointer;
 }
-ul li:not(:first-child) {
-    &:hover {
-        color: $dark-violet;
-        font-weight: 500;
-    }
-    margin-top: 8px;
-}
+
 .flex {
     display: flex;
 }
 .btns {
     margin-top: 20px;
-    margin-right: 50px;
+    margin-left: 10rem;
     font-size: 16px;
 }
 .header {
     justify-content: space-between;
-    
+    .icon {
+        margin-right: 50px;
+    }
 }
 .login {
     background: none;
@@ -52,22 +53,21 @@ ul li:not(:first-child) {
         color: $dark-violet;
     }
     margin-right: 15px;
-    
 }
 .register {
     color: white;
-    padding: 5px 10px;
+    padding: 5px 15px;
     background-color: $cyan;
     &:hover {
         opacity: 0.5;
     }
     border-radius: 15px;
-    
 }
 button {
     cursor: pointer;
     font-weight: 700;
     border-color: transparent;
+    font-size: 16px;
 }
 .header {
     padding: 20px 100px;
@@ -76,30 +76,29 @@ button {
 .main {
     padding: 0 0 0 140px;
 }
-.right-part  {
-    padding-left: 13em;
-    overflow-x: hidden;
+.right-part img {
+    overflow: hidden;
 }
 
 .left-part h1 {
     color: $dark-violet;
-    font-size: 55px;
+    font-size: 65px;
     font-weight: 700;
-    line-height: 60px;
+    line-height: 70px;
     margin-top: 80px;
 }
 .left-part {
-    width: 550px;
-    
+    width: 650px;
 }
 .left-part p {
-    width: 350px;
-    margin-top: -2em;
+    width: 400px;
+    margin-top: 1em;
 }
 .start-btn {
-    margin-top: 10px;
-    padding: 10px 30px;
+    margin-top: 20px;
+    padding: 12px 35px;
     font-weight: 700;
+    font-size: 16px;
     color: white;
     background-color: $cyan;
     border-radius: 20px;
@@ -109,37 +108,28 @@ button {
 }
 .search-part {
     background-color: #F0F1F6;
-    width: 100%;
-    height: 100vh;
+    max-height: 100%;
     margin-top: 10em;
+    .search-bg {
+        padding: 10px 140px;
+    }
 }
 
-.search-part .search-bg {
-    position: absolute;
-    margin-top: -5em;
-    border-radius: 10px;
-    width: 73.2%;
-    background-color: $dark-purple;
-    margin-left: 130px;
-}
- .search-svg {
-    border-radius: 10px;
- }
  form {
     position: absolute;
-    margin-top: -7.5em;
-    margin-left: 100px;
+    margin-top: -4rem;
+    width: 70%;
  }
  form input {
-    width: 45rem;
-    padding: 15px 10px;
+    width: 100%;
+    padding: 0px 10px;
     font-size: 16px;
     border-radius:5px ;
     font-weight: 500;
  }
  form button {
     margin-left: 15px;
-    padding: 8px 30px;
+    padding: 15px 30px;
     border-radius: 5px;
     background-color: $cyan;
     color: white;
@@ -147,29 +137,22 @@ button {
         background-color: #95E7E7;
     }
  }
-span {
+span i {
     font-size: 14px;
-}
-.btm-container {
+    color: #3A3053;
     position: absolute;
+    z-index: 10;
+    margin-top: -5rem;
 }
+
 .btm-container .txt {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding:50px 350px;
+    padding:50px 30%;
     width: 480px;
     text-align: center;
-    p {
-            margin-top: -5px;
-    }
-}
-
-.mt-50 {
-    padding-top: 15rem;
-    display: flex;
-    flex-direction: column;
 }
 
 .card {
@@ -179,7 +162,7 @@ span {
     padding: 20px;
     padding-bottom: 27px;
     margin-right: 40px;
-    margin-top: 20px;
+    margin-top: 30px;
     .title {
             font-size: 18px;
             font-weight: 600;
@@ -203,25 +186,19 @@ span {
     display: flex;
 }
 .el-1 {
-    margin-top: 50px;
+    margin-top: 70px;
 }
 .el-2 {
-    margin-top: 80px;
+    margin-top: 90px;
 }
 
 .footer {
-    padding-right: 70px;
-    background-color: #4B3F6B;
-    .boost-bg {
-            background-color: $dark-purple;
-            height: 34vh;
-        }
+    margin-top: 15px;
 }
 .boost-content {
-    position: absolute;
-    margin: -12rem 20rem;
+    background-color: $dark-purple;
     text-align: center;
-    padding-left: 15rem;
+    padding: 60px;
     h1{
         color: white;
     }
@@ -235,20 +212,18 @@ span {
             background-color: #95E7E7 ;
         }
     }
-
 }
 .footer-main {
-    position: absolute;
-    padding: 30px 79.8px;
+    padding:25px;
+    text-align: center;
     background-color: $dark-violet;
-    width: 88.5%;
     color: white;
     font-size: 14px;
     .icon {
         color: white;
         margin-left: 60px;
     }
-    ul li:not(:first-child) {
+    .menu-bar {
         margin-top: 10px;
         color: $gray;
         
@@ -265,13 +240,273 @@ span {
         height: 20px;
         cursor: pointer;
     }
-
     .social-icons {
         margin-left: 120px;
         img {
             margin-right: 20px;
         }
         margin-top: 15px;
+    } 
+}
+.menu-bar {
+    visibility: hidden;
+    margin-top: 50px;
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    margin-left: -120px;
+    z-index: 50;
+    text-align: center;
+    .f {
+        margin-top: 150px;
+    }
+    .register {
+        margin-top: 20px;
+    }
+    div {
+        margin-top: 20px;
+    }
+}
+.App {
+    max-height: 100%;
+    overflow-x: hidden;
+}
+form {
+    background-color: $dark-purple;
+    padding: 20px;
+    border-radius: 5px;
+}
+.short-link:nth-child(1) {
+    margin-top: 45px;
+}
+.menu img {
+    display: none;
+    width: 50px;
+    height: 70px;
+    margin-right: -50px;
+}
+.mobile-err {
+    display: none;
+}
+.btm-container .copied {
+    background-color: $dark-purple;
+}
+ .short-link .link-bg{
+     background-color: #FFF;
+     width: 86%;
+     padding: 15px 20px 0 20px;
+     margin-top: 12px;
+     border-radius: 5px;
+     justify-content: space-between;
+    button {
+            padding: 0px 25px;
+            border-radius: 5px;
+            background-color: $cyan;
+            color: #FFF;
+            font-weight: 600;
+            height: 40px;
+            margin-bottom: 15px;
+        }
+        a {
+            color: $cyan;
+            margin-right: 20px;
+            margin-top: 5px;
+        }
+        p {
+            color: $dark-violet;
+        }
+ }
+ @media screen and(max-width:1000px) {
+    .short-link {
+        width: 85%
+    }
+    .desk-err {
+        display: none;
+    }
+    .mobile-err {
+        display: block;
+    }
+    .search-part {
+        width: 100%;
+        padding: 0;
+    }
+    .link-bg {
+        flex-direction: column;
+        .link-wrap {
+            flex-wrap: wrap;
+            button {
+                margin-top: 10px;
+                width: 100%;
+            }
+        }
+    }
+    .right-part img {
+        width: 100%;
+    }
+    .main {
+        padding: 0 40px;
+    }
+    .header {
+        padding: 10px 50px;
+    }
+    .search-part {
+        .search-bg {
+            padding: 10px 40px;
+        }
+    }
+    .cards {
+        .card {
+                width: 17em;
+                height: 13em;
+                padding: 10px 20px;
+            }
+            .card p {
+                width: 300px;
+            }
+    }
+    .menu-bar {
+        padding: 0;
+        position: fixed;
+    }
+        .search-part {
+            margin-left: 0em;
+        }
+    .footer-main .social-icons{
+        padding: 0px;
+        margin-left: 0;
+    }
+ }
+
+
+  @media screen and(max-width:1100px) {
+    .menu-bar {
+        visibility: visible;
+        background-color: $dark-purple;
+        width: 100%;
+        height: 100%;
+        padding: 10px 50px;
+        color: white;
+    }
+    .header {
+        ul li, .btns {
+            display: none;
+        }
+        .icon{
+            font-size: 35px;
+        } 
+        .menu img{
+            display: block;
+        }
+    }
+    .footer-main {
+        display: flex;
+        flex-wrap: wrap;
+        .social-icons {
+            margin-left: 0;
+        }
+    }
+
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        .card {
+            width: 18em;
+            height: 10em;
+            margin-left: 40px;
+            margin-top: 60px;
+        }
+
+    }
+    .btm-container .txt {
+        width: 100%;
+        text-align: center;
+        padding: 50px 20px;
+    }
+      .slogan {
+          flex-wrap: wrap-reverse;
+      }
+      .main-title {
+          font-size: 10px;
+      }
+      .left-part {
+        text-align: center;
+      }
+      .left-part p {
+        width: 100%;
+      }
+      .form-els {
+        display: flex;
+        flex-wrap: wrap;
+      }
+        form{
+            margin-top: -6rem;
+            margin-bottom: 20%;
+            input {
+                padding: 20px;
+            }
+            button {
+                margin-top: 20px;
+                width: 100%;
+                margin-left: 0;
+            }
+        }
+                .short-link:nth-child(1) {
+                    margin-top: 100px;
+                }
+            .short-link .link-bg{
+                width: 100%;
+                
+            }
+            
+  }
+
+  @media screen and(max-width:1400px) {
+    .card {
+        width: 20em;
+        height: 10em;
+    }
+    .btns {
+        margin-right: 20px;
     }
     
-}
+    
+  }
+
+  @media screen and(max-width:1300px) {
+    .card {
+        width: 18em;
+        height: 11em;
+    }
+    
+  }
+
+   @media screen and(max-width:1200px) {
+       .card {
+           width: 20em;
+           height: 12em;
+       }
+   }
+
+        @media screen and(max-width:1150px) {
+            .card {
+                width: 20em;
+                height: 14em;
+            }
+        }
+                @media screen and(max-width:1100px) {
+                    .card {
+                        width: 20em;
+                        height: 15em;
+                    }
+
+                }
+  
+ @media screen and(max-width:1090px) {
+     .card {
+         width: 20em;
+         height: 15em;
+     }
+ }
+  
